@@ -22,6 +22,38 @@ const pratos: Game[] = [
     title: 'La Dolce Vita Trattoria',
     score: '4.9⭐',
     description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!'
+  },
+  {
+    id: 3,
+    image: macarrao,
+    infos: ['Italiana'],
+    title: 'La Dolce Vita Trattoria',
+    score: '4.9⭐',
+    description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!'
+  },
+  {
+    id: 4,
+    image: macarrao,
+    infos: ['Italiana'],
+    title: 'La Dolce Vita Trattoria',
+    score: '4.9⭐',
+    description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!'
+  },
+  {
+    id: 5,
+    image: macarrao,
+    infos: ['Italiana'],
+    title: 'La Dolce Vita Trattoria',
+    score: '4.9⭐',
+    description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!'
+  },
+  {
+    id: 6,
+    image: macarrao,
+    infos: ['Italiana'],
+    title: 'La Dolce Vita Trattoria',
+    score: '4.9⭐',
+    description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!'
   }
 ]
 
