@@ -1,6 +1,5 @@
 import Casa from "../../components/CasaBanner"
 import CasaProdutosLista from "../../components/CasaProdutosLista"
-import Header from "../../components/Header"
 import Game from "../../models/Game"
 
 import sushi from '../../assets/images/imagem.png'
@@ -59,7 +58,6 @@ const pratos: Game[] = [
 
 const Home = () => (
   <>
-    <Header />
     <Casa />
     <CasaProdutosLista games={pratos} />
   </>

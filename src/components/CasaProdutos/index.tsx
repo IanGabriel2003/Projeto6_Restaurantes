@@ -1,4 +1,4 @@
-import { Principal, ProdutoLista, ProdutoNome, Produtos } from './styles';
+import { ContainerList, Infos, Principal, ProdutoLista, ProdutoNome, Produtos } from './styles';
 import Button from "../Button";
 import Tag from "../Tag";
 
@@ -11,26 +11,26 @@ type Props = {
 }
 
 const CasaProdutos = ({ image, title, score, description, infos }: Props) => (
-    <Principal>
-      <div className="container">
-        <ProdutoLista>
-          <Produtos>
+  <ContainerList>
+    <ProdutoLista>
+      <Produtos>
+        <Principal>
             <img src={image} alt={title} />
-            <div>
+            <Infos>
               {infos.map((info) => (
                 <Tag key={info}>{info}</Tag>
               ))}
-            </div>
-            <ProdutoNome>
-              <h2>{title}</h2>
-              <p>{score}</p>
-            </ProdutoNome>
-            <p>{description}</p>
-            <Button type="link" to="/restaurantes" title="Veja os melhores restaurantes">Saiba Mais</Button>
-          </Produtos>
-        </ProdutoLista>
-      </div>
-    </Principal>
+            </Infos>
+        </Principal>
+        <ProdutoNome>
+          <h2>{title}</h2>
+          <p>{score}</p>
+        </ProdutoNome>
+        <p>{description}</p>
+        <Button type="link" to="/italiana" title="Veja os melhores restaurantes">Saiba Mais</Button>
+      </Produtos>
+    </ProdutoLista>
+  </ContainerList>
 )
 
 export default CasaProdutos

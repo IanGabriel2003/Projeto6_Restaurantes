@@ -5,8 +5,7 @@ export const BemVindo = styled.div`
   max-width: 100%;
   padding-top: 100px;
   padding-bottom: 40px;
-  display: grid;
-  align-items: center;
+  display: flex;
   justify-content: center;
   background-color: ${cores.rosa};
 
@@ -18,3 +17,5 @@ export const BemVindo = styled.div`
     font-size: 36px;
   }
 `
+
+
