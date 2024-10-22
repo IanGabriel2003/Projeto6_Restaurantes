@@ -1,4 +1,4 @@
-import { ContainerList, Infos, Principal, ProductList, ProdutoNome, Produtos } from './styles';
+import { ContainerList, Infos, Principal, ProductLists, ProdutoNome, Produtos } from './styles';
 import Button from "../Button";
 import Tag from "../Tag";
 
@@ -10,9 +10,9 @@ type Props = {
   description: string;
 }
 
-const HomeProducts = ({ image, title, score, description, infos }: Props) => (
+const Products = ({ image, title, score, description, infos }: Props) => (
   <ContainerList>
-    <ProductList>
+    <ProductLists>
       <Produtos>
         <Principal>
             <img src={image} alt={title} />
@@ -27,10 +27,10 @@ const HomeProducts = ({ image, title, score, description, infos }: Props) => (
           <p>{score}</p>
         </ProdutoNome>
         <p>{description}</p>
-        <Button type="link" to="/italiana" title="Veja os melhores restaurantes">Saiba Mais</Button>
+        <Button type="link" to="/pratos" title="Veja os melhores restaurantes">Saiba Mais</Button>
       </Produtos>
-    </ProductList>
+    </ProductLists>
   </ContainerList>
 )
 
-export default HomeProducts
+export default Products

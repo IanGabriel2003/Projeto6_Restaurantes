@@ -2,7 +2,7 @@ import HeaderCardapios from "../../components/HeaderCardapios";
 import Italiana from "../../components/Italiana";
 import BannerItaliana from "../../components/Italiana Banner";
 
-export const RestauranteItaliano = () => (
+export const Pratos = () => (
   <>
     <HeaderCardapios />
     <BannerItaliana />
@@ -10,4 +10,4 @@ export const RestauranteItaliano = () => (
   </>
 )
 
-export default RestauranteItaliano
+export default Pratos

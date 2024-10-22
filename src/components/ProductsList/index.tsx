@@ -1,19 +1,19 @@
 import Game from '../../models/Game'
-import HomeProducts from '../HomeProducts'
+import Products from '../Products'
 
-import { ProductList } from '../HomeProducts/styles'
+import { ProductLists } from '../Products/styles'
 import { List } from './styles'
 
 export type Props = {
   games: Game[]
 }
 
-const HomeProductList = ({ games }: Props) => (
+const ProductList = ({ games }: Props) => (
   <div className="container">
-    <ProductList>
+    <ProductLists>
       {games.map(game => (
         <List>
-          <HomeProducts
+          <Products
             key={game.id}
             image={game.image}
             infos={game.infos}
@@ -23,8 +23,8 @@ const HomeProductList = ({ games }: Props) => (
             />
         </List>
       ))}
-    </ProductList>
+    </ProductLists>
   </div>
 )
 
-export default HomeProductList
+export default ProductList

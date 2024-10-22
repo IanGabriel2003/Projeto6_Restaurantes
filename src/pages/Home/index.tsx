@@ -1,5 +1,5 @@
-import HomeBanner from "../../components/HomeBanner"
-import HomeProductsList from "../../components/HomeProductsList"
+import Banner from "../../components/Banner"
+import Products from "../../components/ProductsList"
 import Game from "../../models/Game"
 
 import sushi from '../../assets/images/imagem.png'
@@ -58,8 +58,8 @@ const pratos: Game[] = [
 
 const Home = () => (
   <>
-    <HomeBanner />
-    <HomeProductsList games={pratos} />
+    <Banner />
+    <Products games={pratos} />
   </>
 )
 

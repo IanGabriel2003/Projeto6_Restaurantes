@@ -3,7 +3,7 @@ import { BemVindo } from './styles';
 
 import logo from '../../assets/images/logo.png'
 
-export const HomeBanner = () => (
+export const Banner = () => (
     <>
       <Headerbar>
         <HeaderContainer>
@@ -16,4 +16,4 @@ export const HomeBanner = () => (
     </>
 )
 
-export default HomeBanner
+export default Banner
