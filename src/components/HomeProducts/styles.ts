@@ -8,7 +8,7 @@ export const ContainerList = styled.div`
   margin: 40px
 `
 
-export const ProdutoLista = styled.ul`
+export const ProductList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
