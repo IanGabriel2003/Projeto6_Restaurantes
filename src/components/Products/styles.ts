@@ -18,33 +18,33 @@ export const Produtos = styled.li`
   height: 398px;
   border: 1px solid ${cores.rosaEscuro};
 
-  img {
-  display: block;
-  margin: 0 auto;
-  width: 472px;
-  height: 217px;
-  }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 472px;
+      height: 217px;
+    }
 
-  h2, p {
-    color: ${cores.rosaEscuro};
-    margin: 8px;
-  }
+    h2, p {
+      color: ${cores.rosaEscuro};
+      margin: 8px;
+    }
 
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 16px;
-  }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
 
-  ${TagContainer} {
-  margin-right: 16px;
-  }
+    ${TagContainer} {
+      margin-right: 16px;
+    }
 `
 
 export const Infos = styled.div`
-position: absolute;
-top: 16px;
-right: 0px;
+  position: absolute;
+  top: 16px;
+  right: 0px;
 `
 
 export const Principal = styled.div`
