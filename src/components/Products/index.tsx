@@ -27,7 +27,7 @@ const Products = ({ image, title, score, description, infos }: Props) => (
           <p>{score}</p>
         </ProdutoNome>
         <p>{description}</p>
-        <Button type="link" to="/pratos" title="Veja os melhores restaurantes">Saiba Mais</Button>
+        <Button type="link" to="/cardapio" title="Veja os melhores restaurantes">Saiba Mais</Button>
       </Produtos>
     </ProductLists>
   </ContainerList>
