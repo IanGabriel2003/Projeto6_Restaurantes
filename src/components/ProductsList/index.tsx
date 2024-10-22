@@ -1,4 +1,4 @@
-import Game from '../../models/Game'
+import { Game } from '../../pages/Home'
 import Products from '../Products'
 
 import { ProductLists } from '../Products/styles'
@@ -15,11 +15,12 @@ const ProductList = ({ games }: Props) => (
         <List>
           <Products
             key={game.id}
-            image={game.image}
-            infos={game.infos}
-            title={game.title}
-            score={game.score}
-            description={game.description}
+            titulo={game.titulo}
+            destacado={game.destacado}
+            tipo={game.tipo}
+            avaliacao={game.avaliacao}
+            descricao={game.descricao}
+            capa={game.capa}
             />
         </List>
       ))}

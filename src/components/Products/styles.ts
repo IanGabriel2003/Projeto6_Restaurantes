@@ -3,8 +3,6 @@ import { cores } from "../../styles";
 import { TagContainer } from "../Tag/styles";
 
 export const ContainerList = styled.div`
-  max-width: 1024px;
-  width: 100%;
   margin: 40px
 `
 
@@ -16,13 +14,16 @@ export const ProductLists = styled.ul`
 `
 
 export const Produtos = styled.li`
+  width: 472px;
   height: 398px;
   border: 1px solid ${cores.rosaEscuro};
 
   img {
   display: block;
   margin: 0 auto;
-}
+  width: 472px;
+  height: 217px;
+  }
 
   h2, p {
     color: ${cores.rosaEscuro};
@@ -35,9 +36,9 @@ export const Produtos = styled.li`
     margin-bottom: 16px;
   }
 
-${TagContainer} {
-margin-right: 16px;
-}
+  ${TagContainer} {
+  margin-right: 16px;
+  }
 `
 
 export const Infos = styled.div`

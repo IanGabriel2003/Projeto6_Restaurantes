@@ -3,30 +3,30 @@ import Button from "../Button";
 import Tag from "../Tag";
 
 type Props = {
-  image: string;
-  infos: string[]
-  title: string;
-  score: string;
-  description: string;
+  titulo: string;
+  destacado: string;
+  tipo: string;
+  avaliacao: number;
+  descricao: string;
+  capa: string;
 }
 
-const Products = ({ image, title, score, description, infos }: Props) => (
+const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props) => (
   <ContainerList>
     <ProductLists>
       <Produtos>
         <Principal>
-            <img src={image} alt={title} />
+            <img src={capa} alt={titulo} />
             <Infos>
-              {infos.map((info) => (
-                <Tag key={info}>{info}</Tag>
-              ))}
+              <Tag>{destacado}</Tag>
+              <Tag>{tipo}</Tag>
             </Infos>
         </Principal>
         <ProdutoNome>
-          <h2>{title}</h2>
-          <p>{score}</p>
+          <h2>{titulo}</h2>
+          <p>{avaliacao}</p>
         </ProdutoNome>
-        <p>{description}</p>
+        <p>{descricao}</p>
         <Button type="link" to="/cardapio" title="Veja os melhores restaurantes">Saiba Mais</Button>
       </Produtos>
     </ProductLists>
