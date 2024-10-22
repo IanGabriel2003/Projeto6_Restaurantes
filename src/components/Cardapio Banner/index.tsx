@@ -2,7 +2,7 @@ import { Container, Imagem } from "./styles";
 
 import bannerImg from '../../assets/images/image2.png'
 
-export const BannerItaliana = () => (
+export const CardapioBanner = () => (
   <Container>
     <Imagem style={{ backgroundImage: `url(${bannerImg})`}}>
       <div className="container">
@@ -14,4 +14,4 @@ export const BannerItaliana = () => (
 
 )
 
-export default BannerItaliana
+export default CardapioBanner

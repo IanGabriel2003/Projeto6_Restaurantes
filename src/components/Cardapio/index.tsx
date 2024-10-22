@@ -2,7 +2,7 @@ import { Botao, Container, Prato, Pratos } from "./styles";
 
 import esfiha from '../../assets/images/image3.png'
 
-export const Italiana = () => (
+export const Cardapio = () => (
   <Container>
     <div className="container">
       <Pratos>
@@ -43,4 +43,4 @@ export const Italiana = () => (
   </Container>
 )
 
-export default Italiana
+export default Cardapio

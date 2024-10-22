@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { GlobalCss } from './styles';
 
 import Footer from './components/Footer';
-import Header from './components/HeaderCardapios';
+import Header from './components/Cardapio Header';
 
 import Rotas from './routes'
 

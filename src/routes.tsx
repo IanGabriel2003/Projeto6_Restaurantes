@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
-import RestauranteItaliano from './pages/Pratos';
+import RestauranteItaliano from './pages/Cardapios';
 
 const Rotas = () => (
   <Routes>

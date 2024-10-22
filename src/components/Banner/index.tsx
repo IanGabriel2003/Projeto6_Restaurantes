@@ -1,4 +1,4 @@
-import { Headerbar, HeaderContainer } from '../HeaderCardapios/styles';
+import { Headerbar, HeaderContainer } from '../Cardapio Header/styles';
 import { BemVindo } from './styles';
 
 import logo from '../../assets/images/logo.png'
