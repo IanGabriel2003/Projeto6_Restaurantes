@@ -1,4 +1,4 @@
-import { ContainerList, Desc, Infos, Principal, ProductLists, ProdutoNome, Produtos } from './styles';
+import { Desc, Infos, Principal, ProductLists, ProdutoNome, Produtos } from './styles';
 import Button from "../Button";
 import Tag from "../Tag";
 
@@ -12,7 +12,6 @@ type Props = {
 }
 
 const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props) => (
-
     <ProductLists>
       <Produtos>
         <Principal>
@@ -32,7 +31,6 @@ const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props
         </Desc>
       </Produtos>
     </ProductLists>
-  
 )
 
 export default Products

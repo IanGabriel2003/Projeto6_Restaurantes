@@ -1,8 +1,10 @@
-import { Botao, SectionContainer, Prato, Pratos, Modal } from "./styles";
+import { useState } from "react";
+
+import { Botao, SectionContainer, Prato, Pratos, Modal, BannerContainer, Imagem } from "./styles";
 
 import esfiha from '../../assets/images/image3.png'
 import close from '../../assets/images2/fechar.png'
-import { useState } from "react";
+import bannerImg from '../../assets/images/image2.png'
 
 interface GalleryItem {
   foto: string,
@@ -45,6 +47,14 @@ export const Cardapio = ({ name }:Props) => {
 
   return (
     <>
+      <BannerContainer>
+        <Imagem style={{ backgroundImage: `url(${bannerImg})`}}>
+          <div className="container">
+            <h2>Italiana</h2>
+            <p>La Dolce Vita Trattoria</p>
+          </div>
+        </Imagem>
+      </BannerContainer>
       <SectionContainer>
         <div className="container">
           <Pratos>
