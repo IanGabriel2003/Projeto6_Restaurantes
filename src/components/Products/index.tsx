@@ -11,7 +11,15 @@ type Props = {
   capa: string;
 }
 
-const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props) => (
+const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props) => {
+  const getDescricao = (descricao: string) => {
+    if (descricao.length > 314) {
+      return descricao.slice(0, 314) + '...'
+    }
+    return descricao
+  }
+
+  return (
     <ProductLists>
       <Produtos>
         <Principal>
@@ -26,11 +34,12 @@ const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props
             <p>{avaliacao}⭐</p>
           </ProdutoNome>
         <Desc>
-          <p>{descricao}</p>
+          <p>{getDescricao(descricao)}</p>
           <Button type="link" to="/cardapio" title="Veja os melhores restaurantes">Saiba Mais</Button>
         </Desc>
       </Produtos>
     </ProductLists>
 )
+}
 
 export default Products

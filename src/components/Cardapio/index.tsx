@@ -29,6 +29,7 @@ interface ModalState extends GalleryItem {
 }
 
 export const Cardapio = ({ name }:Props) => {
+
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
     foto: '',

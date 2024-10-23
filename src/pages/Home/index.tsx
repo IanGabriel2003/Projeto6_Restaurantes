@@ -3,9 +3,6 @@ import { useEffect, useState } from "react"
 import Banner from "../../components/Banner"
 import Products from "../../components/ProductsList"
 
-import sushi from '../../assets/images/imagem.png'
-import macarrao from '../../assets/images/image1.png'
-
 export type Game = {
   id: number
   titulo: string
