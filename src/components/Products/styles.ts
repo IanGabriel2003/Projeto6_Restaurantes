@@ -1,43 +1,45 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 import { TagContainer } from "../Tag/styles";
+import { ButtonLink } from "../Button/styles";
 
 export const ContainerList = styled.div`
-  margin: 40px
 `
 
 export const ProductLists = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 48px 40px;
   align-items: center;
-
 `
 
 export const Produtos = styled.li`
-  width: 472px;
-  height: 398px;
+  height: 402px;
   border: 1px solid ${cores.rosaEscuro};
 
-    img {
+  h2, p {
+    color: ${cores.rosaEscuro};
+    margin: 0px 8px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 8px 8px;
+  }
+
+  ${TagContainer} {
+    margin-right: 16px;
+  }
+`
+
+export const Principal = styled.div`
+  position: relative;
+
+  img {
       display: block;
       margin: 0 auto;
       width: 472px;
       height: 217px;
-    }
-
-    h2, p {
-      color: ${cores.rosaEscuro};
-      margin: 8px;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 14px;
-      margin-bottom: 16px;
-    }
-
-    ${TagContainer} {
-      margin-right: 16px;
     }
 `
 
@@ -47,14 +49,19 @@ export const Infos = styled.div`
   right: 0px;
 `
 
-export const Principal = styled.div`
-  position: relative;
-`
-
 export const ProdutoNome = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 18px;
+
+  h2, p {
+    font-size: 18px;
+  }
+`
+
+export const Desc = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 `

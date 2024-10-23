@@ -8,6 +8,7 @@ export const BemVindo = styled.div`
   display: flex;
   justify-content: center;
   background-color: ${cores.rosa};
+  margin-bottom: 80px;
 
   p {
     text-align: center;

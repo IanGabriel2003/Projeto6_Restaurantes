@@ -5,6 +5,7 @@ export const ContainerFooter = styled.footer`
   background-color: ${cores.rosa};
   padding: 40px 0;
   font-size: 14px;
+  margin-top: 120px;
 `
 
 export const Textos = styled.div`

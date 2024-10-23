@@ -13,11 +13,11 @@ export const ButtonContainer = styled.button`
 `
 
 export const ButtonLink = styled(Link)`
+  cursor: pointer;
+  text-decoration: none;
   padding: 4px 8px;
   margin: 8px;
   font-size: 14px;
   color: ${cores.branco};
   background-color: ${cores.rosaEscuro};
-  cursor: pointer;
-  text-decoration: none;
 `
