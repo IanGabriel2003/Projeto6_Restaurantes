@@ -7,6 +7,9 @@ export const BannerContainer = styled.section`
   font-size: 14px;
 `
 
+export const CardapioLists = styled.ul`
+`
+
 export const Imagem = styled.div`
     width: 100%;
     height: 270px;

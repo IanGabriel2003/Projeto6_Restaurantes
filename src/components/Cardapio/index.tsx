@@ -2,38 +2,34 @@ import { useState } from "react";
 
 import { Botao, SectionContainer, Prato, Pratos, Modal, BannerContainer, Imagem } from "./styles";
 
-import esfiha from '../../assets/images/image3.png'
 import close from '../../assets/images2/fechar.png'
-import bannerImg from '../../assets/images/image2.png'
 
 interface GalleryItem {
   foto: string,
-  nome: string,
   descricao: string,
 }
 
-const mockCardapio: GalleryItem[] = [
-  {
-    foto: esfiha,
-    nome: 'Pizza Marguerita',
-    descricao: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
-  },
-]
 
 type Props = {
+  capa: string
+  tipo: string
+  titulo: string
+  foto: string
+  preco: number
   name: string
+  descricao: string
+  porcao: string
 }
 
 interface ModalState extends GalleryItem {
   isVisible: boolean
 }
 
-export const Cardapio = ({ name }:Props) => {
+export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, porcao }:Props) => {
 
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
     foto: '',
-    nome: '',
     descricao: ''
   })
 
@@ -41,7 +37,6 @@ export const Cardapio = ({ name }:Props) => {
     setModal({
       isVisible: false,
       foto: '',
-      nome: '',
       descricao: ''
     })
   }
@@ -49,35 +44,32 @@ export const Cardapio = ({ name }:Props) => {
   return (
     <>
       <BannerContainer>
-        <Imagem style={{ backgroundImage: `url(${bannerImg})`}}>
+        <Imagem >
           <div className="container">
-            <h2>Italiana</h2>
-            <p>La Dolce Vita Trattoria</p>
+            <h2>{tipo}</h2>
+            <p>{titulo}</p>
           </div>
         </Imagem>
       </BannerContainer>
       <SectionContainer>
         <div className="container">
           <Pratos>
-            {mockCardapio.map((media, index) => (
-              <Prato key={media.foto}>
+              <Prato>
                 <img
-                  src={media.foto}
-                  alt={`Foto ${index + 1} de ${name}`}
+                  src={foto}
+                  alt={`Foto de ${name}`}
                   onClick={() => {
                     setModal({
                       isVisible: true,
-                      foto: media.foto,
-                      nome: media.nome,
-                      descricao: media.descricao
+                      foto: foto,
+                      descricao: descricao
                     })
                   }}
                 />
-                <h2>{media.nome}</h2>
-                <p>{media.descricao}</p>
+                <h2>{name}</h2>
+                <p>{descricao}</p>
                 <Botao>Adicionar ao carrinho</Botao>
               </Prato>
-            ))}
           </Pratos>
         </div>
       </SectionContainer>
@@ -93,15 +85,15 @@ export const Cardapio = ({ name }:Props) => {
             />
           </header>
           <div>
-            <img src={modal.foto} alt="" />
+            <img src={foto} alt="" />
             <div>
               <h4>{name}</h4>
               <br />
-              <p>A pizza Margherita é uma pizza clássica da culinária italiana, reconhecida por sua simplicidade e sabor inigualável. Ela é feita com uma base de massa fina e crocante, coberta com molho de tomate fresco, queijo mussarela de alta qualidade, manjericão fresco e azeite de oliva extra-virgem. A combinação de sabores é perfeita, com o molho de tomate suculento e ligeiramente ácido, o queijo derretido e cremoso e as folhas de manjericão frescas, que adicionam um toque de sabor herbáceo. É uma pizza simples, mas deliciosa, que agrada a todos os paladares e é uma ótima opção para qualquer ocasião.</p>
+              <p>{descricao}</p>
               <br />
-              <p>Serve: de 2 a 3 pessoas</p>
+              <p>{porcao}</p>
               <br />
-              <button>Adicionar ao carrinho - R$ 60,90</button>
+              <button>{preco}</button>
             </div>
           </div>
         </div>
