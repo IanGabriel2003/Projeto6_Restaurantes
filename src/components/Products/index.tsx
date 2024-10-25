@@ -35,7 +35,7 @@ const Products = ({ titulo, destacado, tipo, avaliacao, descricao, capa }: Props
           </ProdutoNome>
         <Desc>
           <p>{getDescricao(descricao)}</p>
-          <Button type="link" to="/cardapio" title="Veja os melhores restaurantes">Saiba Mais</Button>
+          <Button type="link" to="/cardapio/1" title="Veja os melhores restaurantes">Saiba Mais</Button>
         </Desc>
       </Produtos>
     </ProductLists>

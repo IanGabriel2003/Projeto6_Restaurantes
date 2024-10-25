@@ -4,12 +4,6 @@ import { Botao, SectionContainer, Prato, Pratos, Modal, BannerContainer, Imagem 
 
 import close from '../../assets/images2/fechar.png'
 
-interface GalleryItem {
-  foto: string,
-  descricao: string,
-}
-
-
 type Props = {
   capa: string
   tipo: string
@@ -21,23 +15,18 @@ type Props = {
   porcao: string
 }
 
-interface ModalState extends GalleryItem {
+interface GalleryItem {
   isVisible: boolean
 }
 
 export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, porcao }:Props) => {
-
-  const [modal, setModal] = useState<ModalState>({
-    isVisible: false,
-    foto: '',
-    descricao: ''
+  const [modal, setModal] = useState<GalleryItem>({
+    isVisible: false
   })
 
   const closeModal = () => {
     setModal({
-      isVisible: false,
-      foto: '',
-      descricao: ''
+      isVisible: false
     })
   }
 
@@ -60,9 +49,7 @@ export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, por
                   alt={`Foto de ${name}`}
                   onClick={() => {
                     setModal({
-                      isVisible: true,
-                      foto: foto,
-                      descricao: descricao
+                      isVisible: true
                     })
                   }}
                 />
