@@ -8,8 +8,11 @@ export const BannerContainer = styled.section`
 `
 
 export const CardapioLists = styled.ul`
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+=======
+>>>>>>> 5b947323818306f8619664661d3a6e75246b7564
 `
 
 export const Imagem = styled.div`

@@ -5,6 +5,7 @@ import { Botao, SectionContainer, Prato, Pratos, Modal, BannerContainer, Imagem 
 import close from '../../assets/images2/fechar.png'
 
 type Props = {
+<<<<<<< HEAD
   capa: string;
   tipo: string;
   titulo: string;
@@ -22,6 +23,24 @@ interface ModalState {
 
 export const Cardapio = ({ capa, tipo, titulo, pratos, foto, nome, descricao, porcao, preco }: Props) => {
   const [modal, setModal] = useState<ModalState>({
+=======
+  capa: string
+  tipo: string
+  titulo: string
+  foto: string
+  preco: number
+  name: string
+  descricao: string
+  porcao: string
+}
+
+interface GalleryItem {
+  isVisible: boolean
+}
+
+export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, porcao }:Props) => {
+  const [modal, setModal] = useState<GalleryItem>({
+>>>>>>> 5b947323818306f8619664661d3a6e75246b7564
     isVisible: false
   })
 
@@ -34,7 +53,11 @@ export const Cardapio = ({ capa, tipo, titulo, pratos, foto, nome, descricao, po
   return (
     <>
       <BannerContainer>
+<<<<<<< HEAD
         <Imagem style={{ backgroundImage: `url(${capa})`}}>
+=======
+        <Imagem >
+>>>>>>> 5b947323818306f8619664661d3a6e75246b7564
           <div className="container">
             <h2>{tipo}</h2>
             <p>{titulo}</p>
@@ -44,17 +67,28 @@ export const Cardapio = ({ capa, tipo, titulo, pratos, foto, nome, descricao, po
       <SectionContainer>
         <div className="container">
           <Pratos>
+<<<<<<< HEAD
               <Prato key={foto}>
                 <img
                   src={foto}
                   alt={`Foto de `}
+=======
+              <Prato>
+                <img
+                  src={foto}
+                  alt={`Foto de ${name}`}
+>>>>>>> 5b947323818306f8619664661d3a6e75246b7564
                   onClick={() => {
                     setModal({
                       isVisible: true
                     })
                   }}
                 />
+<<<<<<< HEAD
                 <h2>{nome}</h2>
+=======
+                <h2>{name}</h2>
+>>>>>>> 5b947323818306f8619664661d3a6e75246b7564
                 <p>{descricao}</p>
                 <Botao>Adicionar ao carrinho</Botao>
               </Prato>
@@ -77,11 +111,11 @@ export const Cardapio = ({ capa, tipo, titulo, pratos, foto, nome, descricao, po
             <div>
               <h4>{nome}</h4>
               <br />
-              <p>A pizza Margherita é uma pizza clássica da culinária italiana, reconhecida por sua simplicidade e sabor inigualável. Ela é feita com uma base de massa fina e crocante, coberta com molho de tomate fresco, queijo mussarela de alta qualidade, manjericão fresco e azeite de oliva extra-virgem. A combinação de sabores é perfeita, com o molho de tomate suculento e ligeiramente ácido, o queijo derretido e cremoso e as folhas de manjericão frescas, que adicionam um toque de sabor herbáceo. É uma pizza simples, mas deliciosa, que agrada a todos os paladares e é uma ótima opção para qualquer ocasião.</p>
+              <p>{descricao}</p>
               <br />
-              <p>Serve: de 2 a 3 pessoas</p>
+              <p>{porcao}</p>
               <br />
-              <button>Adicionar ao carrinho - R$ 60,90</button>
+              <button>{preco}</button>
             </div>
           </div>
         </div>
