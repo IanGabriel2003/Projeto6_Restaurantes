@@ -5,7 +5,6 @@ import { Botao, SectionContainer, Prato, Pratos, Modal, BannerContainer, Imagem 
 import close from '../../assets/images2/fechar.png'
 
 type Props = {
-<<<<<<< HEAD
   capa: string;
   tipo: string;
   titulo: string;
@@ -23,24 +22,6 @@ interface ModalState {
 
 export const Cardapio = ({ capa, tipo, titulo, pratos, foto, nome, descricao, porcao, preco }: Props) => {
   const [modal, setModal] = useState<ModalState>({
-=======
-  capa: string
-  tipo: string
-  titulo: string
-  foto: string
-  preco: number
-  name: string
-  descricao: string
-  porcao: string
-}
-
-interface GalleryItem {
-  isVisible: boolean
-}
-
-export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, porcao }:Props) => {
-  const [modal, setModal] = useState<GalleryItem>({
->>>>>>> 5b947323818306f8619664661d3a6e75246b7564
     isVisible: false
   })
 
@@ -53,11 +34,7 @@ export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, por
   return (
     <>
       <BannerContainer>
-<<<<<<< HEAD
         <Imagem style={{ backgroundImage: `url(${capa})`}}>
-=======
-        <Imagem >
->>>>>>> 5b947323818306f8619664661d3a6e75246b7564
           <div className="container">
             <h2>{tipo}</h2>
             <p>{titulo}</p>
@@ -67,28 +44,17 @@ export const Cardapio = ({ capa, tipo, titulo, foto, preco, name, descricao, por
       <SectionContainer>
         <div className="container">
           <Pratos>
-<<<<<<< HEAD
               <Prato key={foto}>
                 <img
                   src={foto}
                   alt={`Foto de `}
-=======
-              <Prato>
-                <img
-                  src={foto}
-                  alt={`Foto de ${name}`}
->>>>>>> 5b947323818306f8619664661d3a6e75246b7564
                   onClick={() => {
                     setModal({
                       isVisible: true
                     })
                   }}
                 />
-<<<<<<< HEAD
                 <h2>{nome}</h2>
-=======
-                <h2>{name}</h2>
->>>>>>> 5b947323818306f8619664661d3a6e75246b7564
                 <p>{descricao}</p>
                 <Botao>Adicionar ao carrinho</Botao>
               </Prato>
