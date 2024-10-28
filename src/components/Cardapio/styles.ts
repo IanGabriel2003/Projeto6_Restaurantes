@@ -7,6 +7,11 @@ export const BannerContainer = styled.section`
   font-size: 14px;
 `
 
+export const CardapioLists = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+`
+
 export const Imagem = styled.div`
     width: 100%;
     height: 270px;
